@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+
+
+    --font:"Poppins", sans-serif;
+}
+
+body{
+    font-family: var(--font);
+    background-color: var(--Light-grey);
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.section{
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: white;
+    border-radius: 20px 20px 110px 20px;
+}
+
+.section__container{
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+
+.section__form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Para navegadores basados en WebKit como Chrome y Safari */
+    appearance: none; /* Estándar */
+}
+
+.section__info{
+    width: 100%;
+}
+
+.section__label{
+    text-transform: uppercase;
+    color: var(--Smokey-grey);
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+.section__input{
+    width: 90%;
+    height: 50px;
+    color: var(--Off-black);
+    font-weight: 800;
+    font-size: 1.2rem;
+    border: 1px solid var(--Light-grey);
+    border-radius: 6px;
+    outline: none;
+    text-align: left;
+    /* padding: 10px; */
+    padding-left: 5%;
+    padding-right: 0;
+    caret-color: var(--Purple);
+}
+
+.section__input::placeholder{
+    color: var(--Smokey-grey);
+    font-weight: 800;
+    font-style: italic;
+    
+}
+
+.section__input:focus{
+    border-color: var(--Purple);
+}
+
+.section__send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0;
+    position: relative;
+}
+
+.section__submit{
+    background-color: var(--Purple);
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.section__arrow{
+    width: 30px;
+    height: 30px;
+    /* height: 10%; */
+}
+
+.section__send::after{
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    border-top: 2px solid var(--Light-grey);
+    width: 100%;
+    z-index: 0;
+}
+
+.section__data{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+}
+
+
+.section__dates{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    padding-left: 5px;
+
+
+}
+
+.section__number{
+    display: inline-block;
+    color: var(--Purple);
+    font-size: 3rem;
+    font-weight: 800;
+
+    
+
+}
+
+.section__date{
+    display: inline-block;
+}
+
+@media(min-width:425px){
+
+    .section{
+
+ 
+        border-radius: 4% 4% 30% 4%;
+    }
+    .section__arrow{
+        width: 40px;
+        height: 40px;
+    }
+
+    .section__dates{
+        font-size: 2rem;
+    }
+
+    .section__number{
+        font-size: 4rem;
+    }
+}
+
+@media(min-width:768px){
+
+    .section__label{
+        font-size: 1rem;
+    }
+    .section__arrow{
+        width: 60px;
+        height: 60px;
+    }
+
+    .section__dates{
+        font-size: 3rem;
+    }
+
+    .section__number{
+        font-size: 6rem;
+    }
+    
+
+}
+
+@media(min-width:1024px){
+
+    .container{
+        width: 85%;
+    }
+
+    .section__form{
+        width: 85%;
+    }
+
+    .section__label{
+        font-size: 1.2rem;
+    }
+    .section__input{
+        width: 90%;
+        height: 80px;
+        font-size: 1.6rem;
+
+    }
+
+    .section__send{
+        
+        justify-content: flex-end;
+        
+    }
+    
+    .section__submit{
+        padding: 20px;
+        
+    }
+    
+
+    .section__arrow{
+        width: 90px;
+        height: 90px;
+    }
+
+    .section__dates{
+        font-size: 5rem;
+    }
+
+    .section__number{
+        font-size: 10rem;
+    }
+}
+
+@media(min-width:1440px){
+    
+    .section__label{
+        font-size: 1.5rem;
+    }
+    .section__input{
+        width: 90%;
+        height: 100px;
+        font-size: 2rem;
+
+    }
+
+  
+    
+    .section__submit{
+        padding: 35px;
+        
+    }
+    
+
+    .section__arrow{
+        width: 120px;
+        height: 120px;
+    }
+
+    .section__dates{
+        font-size: 7rem;
+    }
+
+    .section__number{
+        font-size: 14rem;
+    }
+}
