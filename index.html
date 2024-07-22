@@ -21,15 +21,15 @@
       <form  class="section__form">
         <div class="section__info">
           <label  class="section__label">Day</label>
-          <input type="number" class="section__input" placeholder="DD">
+          <input id="day" type="number" class="section__input" placeholder="DD">
         </div>
         <div class="section__info">
           <label  class="section__label">Month</label>
-          <input type="number" class="section__input" placeholder="MM">
+          <input id="month" type="number" class="section__input" placeholder="MM">
         </div>
         <div class="section__info">
           <label  class="section__label">Year</label>
-          <input type="number" class="section__input" placeholder="YYYY">
+          <input id="year" type="number" class="section__input" placeholder="YYYY">
         </div>
 
        
@@ -37,9 +37,9 @@
 
       <div class="section__send">
         
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="section__submit">
+        <button onclick="obtenerInformacion()" href="#" class="section__submit">
           <img src="./assets/images/icon-arrow.svg" alt="icono de flecha" class="section__arrow">
-        </a>
+        </button>
       </div>
 
       <section class="section__data">
@@ -78,6 +78,7 @@
   -- 
   --  -->
   
+  <script src="./js/index.js"></script>
 
 </body>
 </html>

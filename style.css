@@ -105,10 +105,17 @@ input[type="number"]::-webkit-outer-spin-button {
     background-color: var(--Purple);
     padding: 10px;
     border-radius: 100%;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.section__submit:hover{
+    background-color: var(--Off-black);
 }
 
 .section__arrow{
