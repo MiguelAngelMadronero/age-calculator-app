@@ -18,18 +18,22 @@
 
   <section class="section container">
     <div class="section__container container">
-      <form  class="section__form">
+      <form id="formSubmit"  class="section__form">
         <div class="section__info">
           <label  class="section__label">Day</label>
           <input id="day" type="number" class="section__input" placeholder="DD">
+          <span class="span__error"></span>
+          
         </div>
         <div class="section__info">
           <label  class="section__label">Month</label>
           <input id="month" type="number" class="section__input" placeholder="MM">
+          <span class="span__error"></span>
         </div>
         <div class="section__info">
           <label  class="section__label">Year</label>
           <input id="year" type="number" class="section__input" placeholder="YYYY">
+          <span class="span__error"></span>
         </div>
 
        
@@ -37,24 +41,24 @@
 
       <div class="section__send">
         
-        <button onclick="obtenerInformacion()" href="#" class="section__submit">
+        <button form="formSubmit" href="#" class="section__submit">
           <img src="./assets/images/icon-arrow.svg" alt="icono de flecha" class="section__arrow">
         </button>
       </div>
 
       <section class="section__data">
-        <div class="section__dates">
-          <span class="section__number">32</span>
+        <div  class="section__dates">
+          <span id="year__output"  class="section__number">--</span>
           <h2 class="section__date">years</h2>
           
         </div>
         <div class="section__dates">
-          <span class="section__number">18</span>
+          <span  id="month__output" class="section__number">--</span>
           <h2 class="section__date">months</h2>
           
         </div>
         <div class="section__dates">
-          <span class="section__number">4</span>
+          <span id="day__output"  class="section__number">--</span>
           <h2 class="section__date">days</h2>
           
         </div>
